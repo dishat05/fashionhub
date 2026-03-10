@@ -1,0 +1,250 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.sec-nav {
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+}
+
+.sec-nav,ul,li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 20px;
+    font-weight: 400;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+}
+
+.sec-nav {
+    margin-inline: 0px;
+}
+
+.items , a{
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.input input {
+    text-align: center;
+    width: 250px;
+    margin-right: 40px;
+    margin-left: 190px;
+}
+
+
+/* .horizontal-line {
+    margin-bottom: 10px;
+    opacity: 0.2;
+    height: 0.3px;
+} */
+
+.visibility {
+    display: none;
+}
+
+
+.horizontal-line2 {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    background-color: white;
+    
+}
+
+span {
+    color: rgb(223, 77, 77);
+}
+
+.men-section-items {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    /* display: flex; */
+    height: 400px;
+    width: 1180px;
+    left: 130px;
+    padding-top: 10px;
+    padding-left: 21px;
+    padding-right: 10PX;
+    padding-bottom: 15px;
+    /* margin-bottom: 80px; */
+    z-index: 10;
+    margin-top: 10px;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, ;
+}
+
+.women-section-items {
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+    position: absolute;
+    height: 400px;
+    width: 1180px;
+    /* top: 5px; */
+    /* right: 1px; */
+    left: 130px;
+    padding-top: 10px;
+    padding-left: 21px;
+    padding-right: 10PX;
+    padding-bottom: 15px;
+    z-index: 10;
+    margin-top: 10px;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, ;
+}
+
+.kids-section-items {
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+    position: absolute;
+    height: 400px;
+    width: 1180px;
+    /* top: 100px;
+    right: 1px; */
+    left: 130px;
+    padding-top: 10px;
+    padding-left: 21px;
+    padding-right: 10PX;
+    padding-bottom: 15px;
+    z-index: 10;
+    margin-top: 10px;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, ;
+}
+
+.home-section-items {
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+    position: absolute;
+    height: 400px;
+    width: 1180px;
+    /* top: 100px;
+    right: 1px; */
+    left: 130px;
+    padding-top: 10px;
+    padding-left: 21px;
+    padding-right: 10PX;
+    padding-bottom: 15px;
+    z-index: 10;
+    margin-top: 10px;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, ;
+    
+}
+
+.beauty-section-items {
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+    position: absolute;
+    width: 1180px;
+    height: 400px;
+    /* top: 100px;
+    right: 1px; */
+    left: 130px;
+    padding-top: 10px;
+    padding-left: 21px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    z-index: 10;
+    margin-top: 10px;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, ;
+}
+
+.icons-section-items {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left: 1050px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/* .items {
+    padding-bottom: px;
+} */
+
+.col-1 {
+    float: left;
+    padding-right: 50px;
+}
+
+.col-2 {
+    float: left;
+    padding-right: 50px;
+    
+}
+
+.col-3 {
+    float: left;
+    padding-right: 50px;
+}
+
+.col-4 {
+    float: left;
+    padding-right: 50px;
+}
+
+.col-5 {
+    float: left;
+    padding-right: 50px;
+}
+
+.mySlides {
+    padding-top: 10px;
+    padding-left: 20px;
+    z-index: 10;
+
+}
+
+p {
+    font-size: 12px;
+}
+
+.icons {
+    margin-inline: 8px;
+}
+
+i {
+    display: flex;
+    justify-content: center;
+
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.signup-button {
+    background-color: rgb(250, 208, 157);
+    color: #fff;
+    width: 90px;
+    text-align: left;
+}
+
+.login-button {
+    background-color: #E0F2F1;
+    color: #020202;
+    margin-left: -30px;
+    width: 90px;
+    text-align: center;
+}
+
+.login-button:hover {
+    background-color: bisque;
+}
+
+.pic {
+    padding-left: 10px;
+}
+
+.list {
+    text-align: center;
+
+}
