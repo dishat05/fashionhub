@@ -17,80 +17,45 @@ const icons_section_items = document.querySelector('.icons-section-items');
 const container_ele = document.querySelector('.container');
 var bodyele = document.getElementsByTagName("BODY");
 
-men_section.onmouseover = () => {
-    men_section_items.classList.remove('visibility');
-}
-men_section.onmouseout = () => {
-    men_section_items.classList.add('visibility');
-}
-men_section_items.onmouseover = () => {
-    men_section_items.classList.remove('visibility');
-}
-men_section_items.onmouseout = () => {
-    men_section_items.classList.add('visibility');
-} /* men section ends here */
+let hideTimeout;
 
-women_section.onmouseover = () => {
-    women_section_items.classList.remove('visibility');
-}
-women_section.onmouseout = () => {
-    women_section_items.classList.add('visibility');
-}
-women_section_items.onmouseover = () => {
-    women_section_items.classList.remove('visibility');
-}
-women_section_items.onmouseout = () => {
-    women_section_items.classList.add('visibility');
-} /* women section ends here */
+const showItems = (items) => {
+    clearTimeout(hideTimeout);
+    items.classList.remove('visibility');
+};
 
-kids_section.onmouseover = () => {
-    kids_section_items.classList.remove('visibility');
-}
-kids_section.onmouseout = () => {
-    kids_section_items.classList.add('visibility');
-}
-kids_section_items.onmouseover = () => {
-    kids_section_items.classList.remove('visibility');
-}
-kids_section_items.onmouseout = () => {
-    kids_section_items.classList.add('visibility');
-} /* kids section ends here */
+const hideItems = (items) => {
+    hideTimeout = setTimeout(() => {
+        items.classList.add('visibility');
+    }, 100); // 100ms delay to allow moving between nav and dropdown
+};
 
-home_section.onmouseover = () => {
-    home_section_items.classList.remove('visibility');
-}
-home_section.onmouseout = () => {
-    home_section_items.classList.add('visibility');
-}
-home_section_items.onmouseover = () => {
-    home_section_items.classList.remove('visibility');
-}
-home_section_items.onmouseout = () => {
-    home_section_items.classList.add('visibility');
-} /* home and living ends here */
+men_section.onmouseover = () => showItems(men_section_items);
+men_section.onmouseout = () => hideItems(men_section_items);
+men_section_items.onmouseover = () => showItems(men_section_items);
+men_section_items.onmouseout = () => hideItems(men_section_items);
 
-beauty_section.onmouseover = () => {
-    beauty_section_items.classList.remove('visibility');
-}
-beauty_section.onmouseout = () => {
-    beauty_section_items.classList.add('visibility');
-}
-beauty_section_items.onmouseover = () => {
-    beauty_section_items.classList.remove('visibility');
-}
-beauty_section_items.onmouseout = () => {
-    beauty_section_items.classList.add('visibility');
-}
+women_section.onmouseover = () => showItems(women_section_items);
+women_section.onmouseout = () => hideItems(women_section_items);
+women_section_items.onmouseover = () => showItems(women_section_items);
+women_section_items.onmouseout = () => hideItems(women_section_items);
 
-icons_section.onmouseover = () => {
-    icons_section_items.classList.remove('visibility');
-}
-icons_section.onmouseout = () => {
-    icons_section_items.classList.add('visibility');
-}
-icons_section_items.onmouseover = () => {
-    icons_section_items.classList.remove('visibility');
-}
-icons_section_items.onmouseout = () => {
-    icons_section_items.classList.add('visibility');
-} 
+kids_section.onmouseover = () => showItems(kids_section_items);
+kids_section.onmouseout = () => hideItems(kids_section_items);
+kids_section_items.onmouseover = () => showItems(kids_section_items);
+kids_section_items.onmouseout = () => hideItems(kids_section_items);
+
+home_section.onmouseover = () => showItems(home_section_items);
+home_section.onmouseout = () => hideItems(home_section_items);
+home_section_items.onmouseover = () => showItems(home_section_items);
+home_section_items.onmouseout = () => hideItems(home_section_items);
+
+beauty_section.onmouseover = () => showItems(beauty_section_items);
+beauty_section.onmouseout = () => hideItems(beauty_section_items);
+beauty_section_items.onmouseover = () => showItems(beauty_section_items);
+beauty_section_items.onmouseout = () => hideItems(beauty_section_items);
+
+icons_section.onmouseover = () => showItems(icons_section_items);
+icons_section.onmouseout = () => hideItems(icons_section_items);
+icons_section_items.onmouseover = () => showItems(icons_section_items);
+icons_section_items.onmouseout = () => hideItems(icons_section_items);
