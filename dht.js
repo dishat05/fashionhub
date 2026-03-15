@@ -22,12 +22,24 @@ men_section.onmouseover = () => {
 }
 men_section.onmouseout = () => {
     men_section_items.classList.add('visibility');
+}
+men_section_items.onmouseover = () => {
+    men_section_items.classList.remove('visibility');
+}
+men_section_items.onmouseout = () => {
+    men_section_items.classList.add('visibility');
 } /* men section ends here */
 
 women_section.onmouseover = () => {
     women_section_items.classList.remove('visibility');
 }
 women_section.onmouseout = () => {
+    women_section_items.classList.add('visibility');
+}
+women_section_items.onmouseover = () => {
+    women_section_items.classList.remove('visibility');
+}
+women_section_items.onmouseout = () => {
     women_section_items.classList.add('visibility');
 } /* women section ends here */
 
@@ -36,12 +48,24 @@ kids_section.onmouseover = () => {
 }
 kids_section.onmouseout = () => {
     kids_section_items.classList.add('visibility');
+}
+kids_section_items.onmouseover = () => {
+    kids_section_items.classList.remove('visibility');
+}
+kids_section_items.onmouseout = () => {
+    kids_section_items.classList.add('visibility');
 } /* kids section ends here */
 
 home_section.onmouseover = () => {
     home_section_items.classList.remove('visibility');
 }
 home_section.onmouseout = () => {
+    home_section_items.classList.add('visibility');
+}
+home_section_items.onmouseover = () => {
+    home_section_items.classList.remove('visibility');
+}
+home_section_items.onmouseout = () => {
     home_section_items.classList.add('visibility');
 } /* home and living ends here */
 
@@ -51,10 +75,22 @@ beauty_section.onmouseover = () => {
 beauty_section.onmouseout = () => {
     beauty_section_items.classList.add('visibility');
 }
+beauty_section_items.onmouseover = () => {
+    beauty_section_items.classList.remove('visibility');
+}
+beauty_section_items.onmouseout = () => {
+    beauty_section_items.classList.add('visibility');
+}
 
 icons_section.onmouseover = () => {
     icons_section_items.classList.remove('visibility');
 }
 icons_section.onmouseout = () => {
+    icons_section_items.classList.add('visibility');
+}
+icons_section_items.onmouseover = () => {
+    icons_section_items.classList.remove('visibility');
+}
+icons_section_items.onmouseout = () => {
     icons_section_items.classList.add('visibility');
 } 
