@@ -36,7 +36,7 @@
         border: none;
         padding: 0;
     }
-    input {
+    .login-form-input {
         width: 100%;
         padding: 12px;
         margin-bottom: 15px;
@@ -59,7 +59,7 @@
     .submit-btn:hover {
         background-color: #e6395d;
     }
-    p {
+    .new-account-text {
         margin-top: 15px;
         font-size: 12px;
         color: #696e79;
@@ -99,12 +99,12 @@
    <div class="container">
     <fieldset>
         <h1> LOGIN </h1>
-        <input type="email" id="emmail" name="email" placeholder="Enter Your Email">
-        <input type="password" id="password" placeholder="Enter Your Password">
+        <input type="email" id="emmail" name="email" placeholder="Enter Your Email" class="login-form-input">
+        <input type="password" id="password" placeholder="Enter Your Password" class="login-form-input">
         <a href="index.html">
             <button class="submit-btn" onclick='alert("PLease Enter valid Email Id & Password")'>SUBMIT</button>
         </a>
-        <p>NEW ACCOUNT</p>
+        <p class="new-account-text">NEW ACCOUNT</p>
     </fieldset>
    </div>
 
