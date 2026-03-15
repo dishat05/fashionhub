@@ -261,63 +261,72 @@ i {
     
     .sec-nav {
         flex-wrap: wrap;
+        padding: 10px;
     }
     
     .input input {
-        margin-left: 20px;
-        margin-right: 20px;
-        width: 200px;
+        margin: 10px 0;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
     .sec-nav {
-        padding: 10px;
+        display: grid;
+        grid-template-areas: 
+            "logo icons"
+            "search search";
+        gap: 10px;
+        padding: 15px;
     }
     
-    .sec-nav ul {
-        display: none; /* Hide desktop menu on small screens */
+    .head {
+        grid-area: logo;
+        justify-self: start;
+    }
+    
+    .icons {
+        grid-area: icons;
+        display: flex;
+        justify-self: end;
+        gap: 15px;
+        margin: 0;
+    }
+
+    .icons p {
+        display: none; /* Hide labels like 'Profile' on mobile to save space */
     }
     
     .input {
-        order: 3;
+        grid-area: search;
         width: 100%;
-        margin-top: 10px;
+        margin: 0;
     }
     
     .input input {
         width: 100%;
         margin: 0;
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
     }
     
-    .head {
-        order: 1;
+    .sec-nav ul {
+        display: none; /* Hide main menu for now */
     }
     
-    .icons {
-        order: 2;
-        margin-inline: 5px;
+    .slideshow-container {
+        padding: 0 10px;
     }
-    
+
     .slideshow-container img {
-        height: auto !important;
+        height: 200px !important; /* Fixed height for mobile slideshow */
+        object-fit: cover; /* Prevents stretching */
         width: 100% !important;
-        border-radius: 10px !important;
-    }
-    
-    .mySlides {
-        padding-left: 10px;
-        padding-right: 10px;
+        border-radius: 15px !important;
     }
     
     .men-section-items, .women-section-items, .kids-section-items, .home-section-items, .beauty-section-items {
-        display: none !important; /* Hide dropdowns on mobile to avoid layout breaking */
-    }
-    
-    .col-1, .col-2, .col-3, .col-4, .col-5 {
-        width: 100%;
-        float: none;
-        padding-right: 0;
-        margin-bottom: 20px;
+        display: none !important;
     }
 }
