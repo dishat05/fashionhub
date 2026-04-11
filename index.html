@@ -8,7 +8,11 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body onload="hideSplash()">
+   <div id="splash-screen">
+      <img src="dhtlogo.png" alt="DHT Logo">
+   </div>
+
    <nav class="sec-nav">
       <div class="head">
          <img src="dhtlogo.png" height="50px" width="70px">
@@ -809,7 +813,14 @@
    </div>
   
 <script>
-let slideIndex = 0;
+      function hideSplash() {
+         setTimeout(() => {
+            const splash = document.getElementById('splash-screen');
+            splash.classList.add('fade-out');
+         }, 1500); // Show logo for 1.5 seconds
+      }
+
+      let slideIndex = 0;
 showSlides();
 
 function showSlides() {
